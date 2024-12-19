@@ -1,53 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS Travel Agency</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visit North Sumatera</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <header>
+      <div class="logo">CS Travel</div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#contact">Book Now</a></li>
+        <li><a href="#our-package">Our Package</a></li>
+      </ul>
 
-<body>
-    <header class="main-header">
-        <div class="home-icon"></div>
-
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Our Packages</a>
-            <a href="#">Call Us</a>
-        </nav>
+      <div class="search">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+        </svg>
+      </div>
     </header>
 
-<hr />
+    <!-- AUTO SLIDER -->
 
-    <main>
-        <header class="content-header">
-            <h1>YOUR TRUSTED TRAVEL AGENT</h1>
-            <h3>Visit World Heaven in North Sumatera</h3>
-        </header>
+    <div class="slider">
+      <!-- DAFTAR SLIDER -->
+      <div class="list">
+        <div class="item active">
+          <img src="assets/dest-1.jpg" />
+          <div class="content">
+            <p>Medan</p>
+            <h2>Istana Maimun</h2>
+            <p>
+              Istana Maimun adalah ikon Kota Medan yang begitu megah dan kaya
+              akan sejarah. Bangunan bergaya Melayu-Islam ini merupakan kediaman
+              Kesultanan Deli dan menjadi saksi bisu kejayaan masa lalu.
+              Keindahan arsitektur, interior yang mewah, dan taman yang luas
+              membuat Istana Maimun menjadi tujuan wisata wajib bagi pengunjung
+              Medan.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/dest-2.jpg" />
+          <div class="content">
+            <p>Samosir</p>
+            <h2>Desa Tuktuk Siadong</h2>
+            <p>
+              Desa Tuktuk Siadong adalah salah satu desa wisata yang paling
+              populer di Pulau Samosir. Desa ini menawarkan pemandangan Danau
+              Toba yang menakjubkan, serta kehidupan masyarakat Batak Toba yang
+              masih sangat kental. Di sini, pengunjung dapat menikmati keindahan
+              alam, mencicipi kuliner khas Batak, dan menyaksikan tarian
+              tradisional.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/dest-3.jpg" />
+          <div class="content">
+            <p>Berastagi</p>
+            <h2>Taman Alam Lumbini</h2>
+            <p>
+              Bagi yang menyukai suasana yang tenang dan ingin menikmati
+              keindahan alam yang hijau, Taman Alam Lumbini di Berastagi adalah
+              pilihan yang tepat. Taman ini merupakan kompleks wisata religi
+              Buddha yang dilengkapi dengan berbagai macam bangunan suci,
+              seperti pagoda, stupa, dan patung Buddha. Selain itu, terdapat
+              juga taman bermain anak dan berbagai fasilitas lainnya.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/dest-4.jpg" />
+          <div class="content">
+            <p>Sibolangit</p>
+            <h2>Air Terjun Sipiso-piso</h2>
+            <p>
+              Air Terjun Sipiso-piso adalah salah satu air terjun tertinggi di
+              Indonesia. Keindahan alamnya yang menakjubkan membuat air terjun
+              ini menjadi destinasi favorit para wisatawan. Air terjun yang
+              jatuh dari ketinggian 120 meter ini menawarkan pemandangan yang
+              sangat memukau, terutama saat terkena sinar matahari.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/dest-5.jpg" />
+          <div class="content">
+            <p>Bukit Lawang</p>
+            <h2>Taman Nasional Gunung Leuser</h2>
+            <p>
+              Bagi para pecinta alam, Taman Nasional Gunung Leuser di Bukit
+              Lawang adalah surga yang tak tergantikan. Di sini, pengunjung
+              dapat melakukan berbagai aktivitas menarik, seperti trekking,
+              camping, dan orangutan. Keberadaan orangutan Sumatera menjadi daya
+              tarik utama bagi para wisatawan yang berkunjung ke Bukit Lawang.
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <section class="main-container">
-        <aside class="main-item">
-        <div class="banner-img"></div>
-        </aside>
+      <!-- TOMBOL PANAH -->
 
-        <form class="main-item"></form>
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+
+      <!-- THUMBNAIL KECIL -->
+
+      <div class="thumbnail">
+        <div class="item active">
+          <img src="assets/dest-1.jpg" />
+          <div class="content">Istana Maimun</div>
+        </div>
+        <div class="item">
+          <img src="assets/dest-2.jpg" />
+          <div class="content">Desa Tuktuk</div>
+        </div>
+        <div class="item">
+          <img src="assets/dest-3.jpg" />
+          <div class="content">Taman Alam Lumbini</div>
+        </div>
+        <div class="item">
+          <img src="assets/dest-4.jpg" />
+          <div class="content">Sipiso-piso</div>
+        </div>
+        <div class="item">
+          <img src="assets/dest-5.jpg" />
+          <div class="content">Gunung Leuser</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORM SECTION -->
+
+    <div class="form-section" id="contact">
+      <h2>RENCANAKAN LIBURAN ANDA SEKARANG</h2>
+      <form id="travel-form">
+        <input type="text" id="name" placeholder="Isi Nama Anda" required />
+        <input type="email" id="email" placeholder="Isi Email Anda" required />
+        <select id="destination" required>
+          <option value="">Pilih Tujuan Anda</option>
+          <option value="Istana Maimun">Istana Maimum</option>
+          <option value="Desa Tuktuk">Desa Tuktuk</option>
+          <option value="Taman Alam Lumbini">Taman Alam Lumbini</option>
+          <option value="Sipiso-piso">Sipiso-piso</option>
+          <option value="Taman Gunung Leuser">Taman Gunung Leuser</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- OUR PACKAGE -->
+
+    <section id="our-package">
+      <div class="container">
+        <h2>OUR PACKAGE SERVICE</h2>
+        <div class="price-row">
+          <div class="price-col">
+            <p>LIBURAN KECIL-KECILAN</p>
+            <h3>2 HARI 1 MALAM</h3>
+            <ul>
+              <li>Transportasi (mobil/bus)</li>
+              <li>Akomodasi 1 malam di hotel/penginapan</li>
+              <li>Sarapan pagi</li>
+              <li>Tiket masuk objek wisata</li>
+              <li>Guide lokal</li>
+              <li>Snacks</li>
+              <li>Asuransi perjalanan</li>
+            </ul>
+            <button>Pesan</button>
+          </div>
+
+          <div class="price-col">
+            <p>LIBURAN AGAK LAMA</p>
+            <h3>4 HARI 3 MALAM</h3>
+            <ul>
+              <li>Transportasi (mobil/bus)</li>
+              <li>Akomodasi 3 malam di hotel/penginapan</li>
+              <li>Sarapan pagi</li>
+              <li>Tiket masuk objek wisata</li>
+              <li>Guide lokal</li>
+              <li>Aktivitas Menarik (snorkling, tracking, workshop)</li>
+              <li>Asuransi perjalanan</li>
+            </ul>
+            <button>Pesan</button>
+          </div>
+
+          <div class="price-col">
+            <p>LIBURAN PALING LAMA</p>
+            <h3>7 HARI <span>6 MALAM</span></h3>
+            <ul>
+              <li>Transportasi antar kota</li>
+              <li>Akomodasi 6 malam di hotel/penginapan</li>
+              <li>Sarapan pagi, makan siang dan malam</li>
+              <li>Tiket masuk objek wisata</li>
+              <li>Guide lokal</li>
+              <li>Kegiatan eksklusif lainnya</li>
+              <li>Asuransi perjalanan</li>
+            </ul>
+            <button>Pesan</button>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- FOOTER -->
 
-    <section id="out-package-section">
-        <header class="content-header our-package-header">
-            <h1>Our Package</h1>
-        </header>
-    </section>
+    <footer>
+      <span>&copy;CS Travel. All rights reserved.</span>
+    </footer>
 
-    </main>    
-
-<footer>
-    <span>Copyright by@MTMA North Sumatera</span>
-</footer>
-
-
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>
